@@ -579,7 +579,7 @@ function ChooseMirrors() {
         ;;
     *)
         SOURCE="download.docker.com"
-        echo -e "\n$WARN 输入错误，默认使用官方！"
+        echo -e "\n$WARN输入错误，默认使用${BLUE}官方${PLAIN}！"
         sleep 1s
         ;;
     esac
@@ -651,7 +651,7 @@ function ChooseMirrors() {
         ;;
     12)
         REGISTRY_SOURCE="registry.docker-cn.com"
-        REGISTRY_SOURCE_OFFICIAL="True"
+        REGISTRY_SOURCE_OFFICIAL="False"
         ;;
     *)
         REGISTRY_SOURCE="registry.docker-cn.com"
