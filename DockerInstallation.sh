@@ -578,8 +578,8 @@ function ChooseMirrors() {
         SOURCE="download.docker.com"
         ;;
     *)
-        SOURCE="mirrors.aliyun.com/docker-ce"
-        echo -e "\n$WARN 输入错误，默认使用阿里云！"
+        SOURCE="download.docker.com"
+        echo -e "\n$WARN 输入错误，默认使用官方！"
         sleep 1s
         ;;
     esac
@@ -654,9 +654,9 @@ function ChooseMirrors() {
         REGISTRY_SOURCE_OFFICIAL="True"
         ;;
     *)
-        REGISTRY_SOURCE="registry.cn-hangzhou.aliyuncs.com"
+        REGISTRY_SOURCE="registry.docker-cn.com"
         REGISTRY_SOURCE_OFFICIAL="False"
-        echo -e "\n$WARN 输入错误，默认使用 ${BLUE}阿里云（杭州）${PLAIN}！"
+        echo -e "\n$WARN 输入错误，默认使用 ${BLUE}官方${PLAIN}！"
         sleep 1s
         ;;
     esac
